@@ -22,7 +22,9 @@ import { Nav, Navbar, Form, FormControl, Button } from "react-bootstrap";
 
 function App() {
   return (
-    <div>
+
+      <div>
+        <div style= {{marginBottom: '500px'}}>
       <Router>
         <div>
           <NavBar home = '/' register= '/register'/>
@@ -36,8 +38,10 @@ function App() {
           </Switch>
         </div>
       </Router>
+      </div>
       <Footer facebook= {facebookIcon} instagram= {instagramIcon} youtube= {youtubeIcon}/>
     </div>
+
   );
 }
 
