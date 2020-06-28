@@ -2,6 +2,7 @@ import React from 'react';
 import { Media,Container, Row, Col } from "react-bootstrap";
 import '../assets/styles/MediaPosts.css'
 import Rating from './Rating'
+import '../assets/styles/MediaPosts.css'
 
 const MediaPosts = props => {
     return (

@@ -5,9 +5,9 @@ import '../assets/styles/Homepage.css'
 
 const Homepage = () => {
     return(
-        <div className= "homepage-container">
+
             <MediaPosts pp = {anonymous}/>
-        </div>
+
     );
 }
 

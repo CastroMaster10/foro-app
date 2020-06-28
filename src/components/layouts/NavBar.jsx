@@ -14,9 +14,12 @@ const NavBar = props => {
                     <Link to={props.home}> Home</Link>
                   </Nav.Link>
                   <Nav.Link>
-                    <Link to={props.register}>Register</Link>
+                    <Link to={props.newposts}>New Posts</Link>
                   </Nav.Link>
-                </Nav>
+                  <Nav.Link>
+                    <Link to={props.register}>User</Link>
+                  </Nav.Link>
+                  </Nav>
               </Navbar>
 
 
