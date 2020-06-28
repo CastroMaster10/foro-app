@@ -1,11 +1,22 @@
 import React from 'react';
 import {Container, Row,Col,Button} from 'react-bootstrap'
 import '../assets/styles/NewPosts.css'
+import axios from 'axios';
+
 
 const NewPosts = () => {
+    
+    const handleSubmit =  async (event, req, res  )=> {
+        event.preventDefault()
+         await axios({
+          method: "post",
+          url: "https://foro-app-backend.coodingalex.vercel.app/api/posts",
+        });
+    }
+    
     return(
         <div className="newposts-container">
-            <form action="" method= "">
+            <form  onSubmit={() => handleSubmit()}>
 
                 <Container>
                     <Row>
@@ -31,6 +42,7 @@ const NewPosts = () => {
                         </Col>
                     </Row>
                     <hr className="hr" />
+                    <input type="text" name= "author"/>
                     <Row>
                         <Col md={{ span: 6, offset: 3 }} >
                             <Button id="boton-submit" type="submit">Submit</Button>    

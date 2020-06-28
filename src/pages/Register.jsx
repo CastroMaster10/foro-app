@@ -3,12 +3,26 @@ import {Form,Button,Container, Col, Row,Nav} from 'react-bootstrap';
 import '../assets/styles/Register.css';
 import {
   BrowserRouter as Router,Redirect,} from "react-router-dom";
-
+import axios from "axios"
 
 
 const Register = () => {
 
   const [toRegister, setToRegister] = useState(false)
+
+   const handleSubmit = (event) => {
+     event.preventDefault();
+     axios({
+       method: "post",
+       url: "https://foro-app-backend.coodingalex.vercel.app/api/posts",
+       out: {
+         auth: {
+           username: "username",
+           password: "password",
+         },
+       },
+     });
+   };
 
 
     return (
