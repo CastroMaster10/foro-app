@@ -3,21 +3,27 @@ import {Nav,Navbar,Form, FormControl,Button} from 'react-bootstrap'
 import {BrowserRouter as Router,Link} from "react-router-dom";
 
 const NavBar = props => {
+
+  const styles = {
+    linkDecorations: {
+      textDecoration: "none"
+    }
+  }
     return (
-      <div>
+      <div className="navbar-container">
         
 
               <Navbar bg="dark" variant="dark">
-                <Navbar.Brand href="#home">Foro-app</Navbar.Brand>
-                <Nav className="ml-auto">
+                <Navbar.Brand href= '/'>Foro-app</Navbar.Brand>
+                   <Nav nav-links  className=" nav-links ml-auto">
                   <Nav.Link>
-                    <Link to={props.home}> Home</Link>
+               <Link style= {styles.linkDecorations}  to={props.home}> Home</Link>
                   </Nav.Link>
                   <Nav.Link>
-                    <Link to={props.newposts}>New Posts</Link>
+              <Link style={styles.linkDecorations} to={props.newposts}>New Posts</Link>
                   </Nav.Link>
                   <Nav.Link>
-                    <Link to={props.register}>User</Link>
+              <Link style={styles.linkDecorations} to={props.register}>User</Link>
                   </Nav.Link>
                   </Nav>
               </Navbar>

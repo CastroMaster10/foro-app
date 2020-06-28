@@ -4,8 +4,8 @@ import '../assets/styles/Register.css';
 import {
     BrowserRouter as Router, Redirect,
 } from "react-router-dom";
-import Login from './Login';
-import avatar from '../assets/img/avatar.jpeg';
+
+
 
 
 const Register = () => {
@@ -27,10 +27,8 @@ const Register = () => {
                 (
                     <Container>
                         <Row>
-                            <Col md={{span:4,offset:1}}>
-                                <img className="avatar-img" src={avatar} alt="avatar_img" />
-                            </Col>
-                            <Col className="register-col" md={5}>
+                           
+                            <Col className="register-col" md={{span:6,offset:3}}>
                                 <div className="btn-box">
                                     <div style={styles.background} className="btn-color"></div>
                                     <button onClick={() => setToLogin(true)} className="btn-trigger">Register</button>

@@ -5,9 +5,9 @@ import Login from './pages/Login';
 import NewPosts from './pages/NewPosts';
 import NavBar from './components/layouts/NavBar';
 import Footer from './components/layouts/Footer';
-import instagramIcon from './assets/img/icon-instagram.svg'
-import facebookIcon from './assets/img/icon-facebook.svg'
-import youtubeIcon from './assets/img/icon-youtube.svg'
+import instagramIcon from './assets/img/instagram-icon.png'
+import facebookIcon from './assets/img/facebook-icon.png'
+import emailIcon from './assets/img/email-icon.png'
 import {
   BrowserRouter as Router,
   Switch,
@@ -46,7 +46,7 @@ function App() {
       </Router>
       </div>
       <footer className="footer">
-         <Footer facebook= {facebookIcon} instagram= {instagramIcon} youtube= {youtubeIcon}/>
+         <Footer facebook= {facebookIcon} instagram= {instagramIcon} email= {emailIcon}/>
       </footer>
     </div>
 

@@ -5,7 +5,7 @@ import '../assets/styles/NewPosts.css'
 const NewPosts = () => {
     return(
         <div className="newposts-container">
-            <form action="">
+            <form action="" method= "">
 
                 <Container>
                     <Row>

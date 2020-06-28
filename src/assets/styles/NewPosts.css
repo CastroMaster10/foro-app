@@ -3,12 +3,13 @@
 }
 
 #header {
-    margin-bottom: 250px ;
+    margin-bottom: 100px ;
 }
 
 #title {
     border: none;
     font-size: 20px;
+    width: 545px;
 }
 
 .hr {
